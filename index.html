@@ -1,9 +1,168 @@
 <html>
-  <title>
-    Portfolio Website
-  </title>
-  
-  <body>
-    <h1>This is Matt Fox's portfolio.</h1>
-  </body>
-</html>
+ <html lang ="en">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<head>
+		<title>My Personal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+	</head>
+	<body>
+	<br>
+	    <div class="container"style="background-color: #D3D3D3">
+	        <ul class="nav nav-pills nav-justified">
+	            <li><a href="#" id="home">Home</a></li>
+	            <li><a href="#" id="portfolio">Portfolio</a></li>
+	            <li><a href="#" id="contact">Contact</a></li>
+	        </ul>
+	   </div>
+<div class="container">
+    <div class="jumbotron" id="homeSection">
+	   <div class="row">
+	   <div class="col-lg-3">
+	  <a data-flickr-embed="true"  href="https://www.flickr.com/photos/155287618@N06/34976504636/in/dateposted-public/" title="phot0"><img src="https://c1.staticflickr.com/5/4243/34976504636_3faa0f77e2_n.jpg" width="150" height="200" alt="phot0" class="img-responsive img-rounded"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+	   </div>
+	       <div class="col-lg-9">
+	        <span class="text-info"><h2>About Me</h2><br><br><p>My name is Matt and I'm currently a student at UWM studying computer engineering. I currently am able to code with Java, JQuery, HTML, CSS. I am an avid web designer that enjoys coding. Below I have a couple of my recent projects as well as a contact form and my social media pages. </p></span>
+	      </div>
+	   </div>
+    </div>
+   <!--next section--> 
+   <hr/>
+    <!--portfolio carousel-->
+    <div class="row" id="portfolioSection">
+        <div class="col-md-12">
+            <div id="portSlide" class="carousel slide" data-ride="carousel">
+                <!--dot navigators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#portSlide" data-slide-to="0"></li>
+                    <li data-target="#portSlide" data-slide-to="1"></li>
+                </ol>
+                <!--slides below-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    <img src="https://c1.staticflickr.com/5/4222/34979510666_c51834751f_h.jpg"alt="NAHS"/>
+                    <div class="carousel-caption">
+                        <h1><a href="http://whitnall.org/whs/art/" class="btn btn-info btn-transparent">Click for Website</a></h1>
+                    </div>
+                    </div>
+                    
+                    <div class="item">
+                    <img src="https://c1.staticflickr.com/5/4250/34632034850_03df767d27_z.jpg"alt="Giannis website"/>
+                    <div class="carousel-caption">
+                        <h1><a href="https://codepen.io/mattfox1388/pen/pPMGVM"class="btn btn-info btn-transparent">Click for Website</a></h1>
+                    </div>
+                    </div>
+                </div>
+                <!--slide buttons-->
+                 <a class="left carousel-control" href="#portSlide" role="button" data-slide="prev">
+                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                 <a class="right carousel-control" href="#portSlide" role="button" data-slide="next">
+                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                 </a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <!--contact form-->
+    <form id="contactSection">
+        <span class="text-primary"><h2 id="contactF">Contact Form</h2></span>
+        <div class="form-group">
+            <label for="contactInput1">First Name</label>
+            <input type="text" class="form-control"id="contactInput1" placeholder="Place Name Here">
+        </div>
+        <div class="form-group">
+            <label for="contactInput2">Last Name</label>
+            <input type="text" class="form-control"id="contactInput2" placeholder="Place Name Here">
+        </div>
+        <div class="form-group">
+            <label for="contactInput3">Age</label>
+            <input type="text" class="form-control"id="contactInput3" placeholder="Place Age Here">
+        </div>
+        <div class="form-group">
+            <label for="contactInput4">Email</label>
+            <input type="text" class="form-control"id="contactInput4" placeholder="example@gmail.com">
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+            <label for="phoneContact">Phone Number:</label>
+            </div>
+            <div class="col-sm-1">
+                <input type="text" class="form-control" placeholder="Area " maxlength="3"/>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" placeholder="123" maxlength="3"/>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" placeholder="4567" maxlength="4"/>
+            </div>
+        </div>
+        <br>
+        <div class="form-inline">
+            <label class="mr-md-2" for="genderInput">Gender</label>
+            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="genderInput">
+                <option selected>Choose</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    <hr/>
+    <!--Add social media-->
+    <span class="text-primary"><h2 id="contactF">Social Media</h2></span>
+    <div class="row">
+        <div class="col-md-3">
+        <a href="https://www.facebook.com/matt.fox.543792" alt="facebook"><img src="http://www.freeiconspng.com/uploads/facebook-transparent-pics-18.png"class="img1"></a>
+        </div>
+        <div class="col-md-3">
+        <a href="https://twitter.com/kazou8" alt="twitter"><img src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-256.png"class="img1"></a>
+        </div>
+        <div class="col-md-3">
+        <a href="https://www.linkedin.com/in/matthew-fox-194583138/" alt="linkedIn"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png"class="img1"></a>
+        </div>
+        <div class="col-md-3">
+        <a href="https://www.freecodecamp.com/mattfox1388" alt="freecodebootcamp"><img src="https://qph.ec.quoracdn.net/main-qimg-403f76f93a17b887ddf92cb372136b64"class="img1"></a>
+        </div>
+    </div>
+    <hr/>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <h6>Copyright &copy; 2017 Matthew Fox</h6>
+            </div>
+            
+            <div class="col-sm-4">
+                <h6>About this website</h6>
+                <p>All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.</p>
+            </div> 
+            
+            <div class="col-sm-2">
+                <h6>Navigation</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" id="home">Home</a></li>
+	                <li><a href="#" id="portfolio">Portfolio</a></li>
+	                <li><a href="#" id="contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-sm-4">
+            <h6>Coded by Matt Fox <span class="glyphicon glyphicon-fire"></span> </h6>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+	<!--Just script sources-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src = "script.js" type="text/javascript"></script>   
+	<script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+    </html>
