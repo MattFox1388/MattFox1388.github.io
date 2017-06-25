@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Machine</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Raleway" rel="stylesheet">
+<!--use:
+font-family: 'Bubbler One', sans-serif;
+font-family: 'Raleway', sans-serif;
+-->
+</head>
+<body>
+
+    <h1 id="title1">Quote Machine</h1>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="centering text-center jumbotron" id="centerBox">
+          <p id="quoteText">Quotes appear here.</p><br><br><br><br><br>
+            <div class="btn-holder">
+              <button class="btn btn-primary btn-lg" role="button" id="#newQuote">New Quote</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.btn').click(function(e){
+        e.preventDefault();
+        console.log("clicked");
+        var request = new XMLHttpRequest();
+        request.open('GET',"http://forismatic.com/api/1.0/");
+        request.onload=function(){
+          console.log(request.responseText);
+        }
+        request.send();
+      });
+    });
+  </script>
+</body>
+</html>
