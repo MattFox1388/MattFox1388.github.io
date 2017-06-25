@@ -37,12 +37,11 @@ font-family: 'Raleway', sans-serif;
       $('.btn').click(function(e){
         e.preventDefault();
         console.log("clicked");
-        var request = new XMLHttpRequest();
-        request.open('GET',"https://quotesondesign.com/api/3.0/api-3.0.json?callback=my_function");
-        request.onload=function(){
-          console.log(request.responseText);
-        }
-        request.send();
+        $.ajax('https://quotesondesign.com/api/3.0/api-3.0.json?callback=my_function',{
+          success:function(response){
+            console.log(response);
+          }
+        });
       });
     });
   </script>
