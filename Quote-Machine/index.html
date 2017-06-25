@@ -38,7 +38,7 @@ font-family: 'Raleway', sans-serif;
         e.preventDefault();
         console.log("clicked");
         var request = new XMLHttpRequest();
-        request.open('GET',"http://quotesondesign.com/api/3.0/api-3.0.json?callback=my_function");
+        request.open('GET',"https://quotesondesign.com/api/3.0/api-3.0.json?callback=my_function");
         request.onload=function(){
           console.log(request.responseText);
         }
