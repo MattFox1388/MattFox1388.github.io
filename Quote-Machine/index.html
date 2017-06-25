@@ -39,7 +39,7 @@ font-family: 'Raleway', sans-serif;
         console.log("clicked");
         $.ajax('https://quotesondesign.com/api/3.0/api-3.0.json?callback=my_function',{
           success:function(response){
-            console.log(response);
+            console.log('success',response);
           }
         });
       });
