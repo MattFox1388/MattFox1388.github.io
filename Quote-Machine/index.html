@@ -37,7 +37,7 @@ font-family: 'Raleway', sans-serif;
       $('.btn').click(function(e){
         e.preventDefault();
         console.log("clicked");
-       $.ajax('http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?', {
+       $.ajax('https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?', {
          success:function(response){
            console.log(response);
          }
