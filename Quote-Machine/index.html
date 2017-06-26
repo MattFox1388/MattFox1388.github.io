@@ -37,7 +37,7 @@ font-family: 'Raleway', sans-serif;
       $('.btn').click(function(e){
         e.preventDefault();
         console.log("clicked");
-       $.ajax("http://api.icndb.com/jokes/random?exclude=[explicit]", {
+       $.ajax("https://api.icndb.com/jokes/random?exclude=[explicit]", {
          success:function(response){
            console.log(response);
          }
