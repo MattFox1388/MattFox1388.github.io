@@ -38,7 +38,7 @@ font-family: 'Raleway', sans-serif;
         e.preventDefault();
         console.log("clicked");
        var ourRequest = new XMLHttpRequest();
-        ourRequest.open('GET','https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en');
+        ourRequest.open('GET','https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en');
         ourRequest.onload = function(){
           console.log(ourRequest.responseText);
         }
