@@ -22,10 +22,10 @@ font-family: 'Raleway', sans-serif;
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="centering text-center jumbotron" id="centerBox">
-          <p id="quoteText">Quotes appear here.</p><br><br><br><br><br>
-            <div class="btn-holder">
-              <button class="btn btn-primary btn-lg" role="button" id="#newQuote">New Quote</button>
-            </div>
+          <p id="quoteText">Quotes appear here.</p>
+          <div class="wrapper">
+            <button class="btn btn-primary btn-lg" role="button" id="#newQuote">New Quote</button>
+          </div>
         </div>
       </div>
     </div>
@@ -34,12 +34,13 @@ font-family: 'Raleway', sans-serif;
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function(){
+      var $quoteText = $('#quoteText');
       $('.btn').click(function(e){
         e.preventDefault();
-        console.log("clicked");
        $.ajax("https://api.icndb.com/jokes/random?exclude=[explicit]", {
-         success:function(response){
-           console.log(response);
+         success:function(responses){
+           $quoteText.empty();
+          $quoteText.append(responses.value.joke);
          }
        });
       });

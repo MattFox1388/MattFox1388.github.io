@@ -40,16 +40,22 @@ h1{
 #centerBox{
   background-color: blue;
  position:fixed;
-  top:50%;
+  top:30%;
   left:50%;
  transform: translate(-50%, -50%);
  width:50%;
- height:50%;
+ height:30%;
 
 }
 p{
   font-family: 'Raleway', sans-serif;
 }
 #quoteText{
-  font-size:60px;
+  font-size:20px;
+}
+.wrapper{
+  text-align:center;
+}
+#newQuote{
+  align-content: center;
 }
