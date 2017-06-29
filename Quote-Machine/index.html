@@ -23,28 +23,16 @@ font-family: 'Raleway', sans-serif;
       <div class="row-fluid">
         <div class="centering text-center jumbotron" id="centerBox">
           <p id="quoteText">Quotes appear here.</p>
-          <div class="wrapper">
-            <button class="btn btn-primary btn-lg" role="button" id="#newQuote">New Quote</button>
-          </div>
+            <div class="wrapper">
+            <span><button class="btn btn-primary btn-lg" role="button" id="#newQuote">New Quote</button></span>
+            </div>
         </div>
       </div>
+      <input type="image" src="http://cdn.downdetector.com/static/uploads/c/300/a4e0b/twitter-logo_22.png" name="saveForm" class="btTxt submit" id="twitterShare" height="30"width="30" />
     </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      var $quoteText = $('#quoteText');
-      $('.btn').click(function(e){
-        e.preventDefault();
-       $.ajax("https://api.icndb.com/jokes/random?exclude=[explicit]", {
-         success:function(responses){
-           $quoteText.empty();
-          $quoteText.append(responses.value.joke);
-         }
-       });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
