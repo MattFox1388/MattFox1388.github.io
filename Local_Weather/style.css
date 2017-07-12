@@ -1,0 +1,47 @@
+*{
+  padding:0;
+  margin:0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body{
+  font-size:62.5%;
+  font-family: 'Fjord One', serif;
+  color:black;
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/HD-Weather-Wallpaper.jpg');
+   background-repeat: no-repeat;
+}
+.container{
+  font-size:1.6em;
+  padding:2em;
+  margin:0 auto;
+  width:990px;
+  background-color : transparent;
+}
+#header, #name1{
+  color:white;
+}
+#center_div, #weather_div{
+  text-align:center;
+    background-color : transparent;
+}
+.card-img-top{
+  height:100px;
+  width:100px;
+}
+.card{
+  width:200px;
+  border: 1px solid #999;
+ 	background-color: #D3D3D3;
+ 	padding: 4px;
+  margin-left: 10px;
+}
+.col-lg-3{
+  background-color:#7A8B8B;
+}
+#weather_div{
+  overflow:hidden;
+  height:100%;
+  display:none;
+}
