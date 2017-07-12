@@ -6,7 +6,7 @@ $(document).ready(function(){
     function onPositionReceived(position){
       var lat = position.coords.latitude;
       var long = position.coords.longitude;
-      var str = 'https://api.darksky.net/forecast/85ec574012f4851e2022ba22c425200c/'+lat+','+long;
+      var str =  "https://crossorigin.me/" +'https://api.darksky.net/forecast/85ec574012f4851e2022ba22c425200c/'+lat+','+long;
       var myRequest = new XMLHttpRequest();
       myRequest.open('GET',str);
       myRequest.onload = function(){
