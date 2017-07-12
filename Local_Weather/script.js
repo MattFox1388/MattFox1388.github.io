@@ -16,7 +16,7 @@ $(document).ready(function(){
         var $summary = obj.currently.summary;
         var $wind_speed = obj.currently.windSpeed+" MPH";
         //request for city name
-        var city = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+long+'&sensor=true';
+        var city = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+long+'&sensor=true';
         var nameRequest = new XMLHttpRequest();
         nameRequest.open('GET',city);
         nameRequest.onload = function(){
@@ -36,7 +36,7 @@ $(document).ready(function(){
         console.log(obj.currently.icon);
         switch(obj.currently.icon){
           case 'rain':
-            $img.css('background-image',"url('http://www.iconarchive.com/download/i89288/icons8/ios7/Weather-Rain.ico')");
+            $img.css('background-image',"url('https://www.iconarchive.com/download/i89288/icons8/ios7/Weather-Rain.ico')");
             break;
           case 'snow':
               $img.css('background-image',"url('https://cdn3.iconfinder.com/data/icons/weather-icons-8/512/weather-snowy-h-512.png')");
@@ -48,10 +48,10 @@ $(document).ready(function(){
               $img.css('background-image',"url('https://cdn3.iconfinder.com/data/icons/simple-weather-icon/64/Overcast-512.png')");
             break;
           case 'clear':
-              $img.css('background-image',"url('http://www.freeiconspng.com/uploads/sunny-icon-8.png')");
+              $img.css('background-image',"url('https://www.freeiconspng.com/uploads/sunny-icon-8.png')");
             break;
           default:
-              $img.css('background-image',"url('http://icons.iconarchive.com/icons/icons8/ios7/96/Weather-Partly-Cloudy-Day-icon.png')");
+              $img.css('background-image',"url('https://icons.iconarchive.com/icons/icons8/ios7/96/Weather-Partly-Cloudy-Day-icon.png')");
         }
         //this button changes temperature value from fahreinheit to celcius
         $('#temp_button').click(function(e){
