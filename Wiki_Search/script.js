@@ -17,7 +17,7 @@ $(document).ready(function(){
     for(var i=0;i<obj[1].length;i++){
         var $title = '<h1>'+obj[1][i]+'</h1><br>';
         var $bio = '<p>'+obj[2][i]+'</p><br>';
-        var $link = '<a href="'+obj[3][i]+'">Link To Wiki</a>';
+        var $link = '<a href="'+obj[3][i]+'" >Link To Wiki</a>';
         $('<div>'+$title+$bio+$link+'</div>').attr('class','container result').appendTo('body');
     }
   }
@@ -48,7 +48,7 @@ $(document).ready(function(){
      });
 //click away from search form causes search bar to close
   $(document).on('click', function(e) {
-    e.preventDefault();
+    
     if(!$(e.target).is('#search-trigger')&&!$(e.target).is('#search-input')) {
       $('#search-input').removeClass('search-input-open');
     }
