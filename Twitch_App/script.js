@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var array = ['joshOG','TimTheTatman','LealeRyan','h3h3productions','CaptainSpiking','purgegamers','Draskyl'];
+  var array = ['joshOG','FreeCodeCamp','TimTheTatman','LealeRyan','h3h3productions','CaptainSpiking','purgegamers','Draskyl'];
   var newArray = [];
   var $table = $('.table');
   for(var i = 0;i<array.length;i++){
@@ -21,8 +21,10 @@ $(document).ready(function(){
                 )
               )
             .append($('<td>')
-              .append($('<p>')
+              .append($('<a>')
                 .text(obj.stream.channel.display_name)
+                .attr('href',obj.stream.channel.url)
+                .addClass('anchor')
               )
             )
             .append($('<td>')
@@ -55,8 +57,10 @@ $(document).ready(function(){
                 )
               )
             .append($('<td>')
-              .append($('<p>')
+              .append($('<a>')
                 .text(offlineObj.display_name)
+                .attr('href',offlineObj.url)
+                .addClass('anchor')
               )
             )
             .append($('<td>')
