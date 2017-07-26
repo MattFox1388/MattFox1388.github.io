@@ -45,7 +45,6 @@ $(document).ready(function(){
           xhr.open('GET',URL);
           xhr.onload = function(){//when ajax call is successful
             var offlineObj = JSON.parse(xhr.responseText);
-            console.log(offlineObj);
             $table.find('tbody')
             .append($('<tr>')
             .addClass('offline')
