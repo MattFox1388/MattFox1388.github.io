@@ -54,13 +54,6 @@ app.controller('calcCtrl',function(){
     }
   }
   /*
-  * This method will change the sign 
-  * if no signs are already placed
-  */
-  this.changeSign = function(){
-    //TODO:
-  }
-  /*
   * This methods resembles the
   * clear function on the calculator
   * essentially clearing all
