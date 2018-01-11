@@ -38,7 +38,7 @@ $(document).ready(function(){
           if(e.keyCode==13){
             e.preventDefault();
             var searchTerm = document.getElementById('search-input').value;
-            var string = "https://crossorigin.me/" +"http://en.wikipedia.org/w/api.php?action=opensearch&origin=*&search=" + searchTerm + "&formatversion=2&format=json";
+            var string = "http://en.wikipedia.org/w/api.php?action=opensearch&origin=*&search=" + searchTerm + "&formatversion=2&format=json";
             $('.result').remove();
            getText(string,callSaul);
           }
