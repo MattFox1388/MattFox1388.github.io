@@ -6,17 +6,18 @@ $(document).ready(function(){
     function onPositionReceived(position){
       var lat = position.coords.latitude;
       var long = position.coords.longitude;
-      var str =  "https://crossorigin.me/" +'https://api.darksky.net/forecast/85ec574012f4851e2022ba22c425200c/'+lat+','+long;
+      var str =  'https://fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+long;
       var myRequest = new XMLHttpRequest();
       myRequest.open('GET',str);
       myRequest.onload = function(){
         var obj = JSON.parse(myRequest.responseText);
         //changes html when weather data is received
-        var $temp = obj.currently.temperature;
-        var $summary = obj.currently.summary;
-        var $wind_speed = obj.currently.windSpeed+" MPH";
+        var $temp = obj.main.temp;
+        var $summary = obj.weather[0].description;
+        var $wind_speed = obj.wind.speed + " MPH";
         //request for city name
         var city = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+long+'&sensor=true';
+        console.log(city);
         var nameRequest = new XMLHttpRequest();
         nameRequest.open('GET',city);
         nameRequest.onload = function(){
@@ -33,25 +34,27 @@ $(document).ready(function(){
         $('#button1').hide();
         //change body background based on weather
         var $img = $('#card3');
-        console.log(obj.currently.icon);
-        switch(obj.currently.icon){
-          case 'rain':
-            $img.css('background-image',"url('https://www.iconarchive.com/download/i89288/icons8/ios7/Weather-Rain.ico')");
+        console.log(obj.weather[0].main);
+        switch(obj.weather[0].main){
+          case 'Rain':
+            $img.attr('src','https://www.iconarchive.com/download/i89288/icons8/ios7/Weather-Rain.ico');
             break;
-          case 'snow':
-              $img.css('background-image',"url('https://cdn3.iconfinder.com/data/icons/weather-icons-8/512/weather-snowy-h-512.png')");
+          case 'Snow':
+              $img.attr('src','https://cdn3.iconfinder.com/data/icons/weather-icons-8/512/weather-snowy-h-512.png');
             break;
-          case 'fog':
-              $img.css('background-image',"url('https://cdn0.iconfinder.com/data/icons/weather-bold/142/mist-512.png')");
+          case 'Mist':
+              $img.attr('src','https://cdn0.iconfinder.com/data/icons/weather-bold/142/mist-512.png');
             break;
-          case 'cloudy':
-              $img.css('background-image',"url('https://cdn3.iconfinder.com/data/icons/simple-weather-icon/64/Overcast-512.png')");
+          case 'Clouds':
+              $img.attr('src','https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?dpr=1&auto=format&fit=crop&w=376&h=251&q=60&cs=tinysrgb');
             break;
-          case 'clear':
-              $img.css('background-image',"url('https://www.freeiconspng.com/uploads/sunny-icon-8.png')");
+          case 'Clear':
+              $img.attr('src','https://www.freeiconspng.com/uploads/sunny-icon-8.png');
             break;
-          default:
-              $img.css('background-image',"url('https://icons.iconarchive.com/icons/icons8/ios7/96/Weather-Partly-Cloudy-Day-icon.png')");
+          case 'Thunderstorm':
+              $img.attr('src', 'https://d30y9cdsu7xlg0.cloudfront.net/png/5065-200.png');
+          default://includes partly cloudy results
+              $img.attr('src','https://icons.iconarchive.com/icons/icons8/ios7/96/Weather-Partly-Cloudy-Day-icon.png');
         }
         //this button changes temperature value from fahreinheit to celcius
         $('#temp_button').click(function(e){
