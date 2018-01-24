@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "app1" ng-cloak>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+<div ng-controller = "mainCtrl">
+    <marked>
+     I am using __markdown__.
+    </marked>
+</div>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" type="text/javascript"></script>
+    <script src = "js/app1" type = "text/javascript"></script>
+    <script src = "bower_components/marked/lib/marked.js"></script>
+    <script src="bower_components/angular-marked/dist/angular-marked.js"></script>
+</body>
+
+</html>
