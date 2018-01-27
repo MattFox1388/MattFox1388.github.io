@@ -1,5 +1,0 @@
-var app1 = angular.module('app1',['hc.marked']);
-
-app1.controller('mainCtrl', function($scope){
-
-});
