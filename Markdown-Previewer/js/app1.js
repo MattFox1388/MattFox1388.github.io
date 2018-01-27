@@ -7,4 +7,5 @@ app1.config(['markedProvider', function (markedProvider) {
  });
 }]);
 app1.controller('mainCtrl', ['marked', function (marked, $scope,) {
+    marked.setOptions({sanitize: true});
 }]);
