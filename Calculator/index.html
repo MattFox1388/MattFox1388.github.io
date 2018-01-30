@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="calculator">
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <div id = "middleDiv" class = "ng-cloak" ng-controller = "calcCtrl as calc">
+        <!--Display Area-->
+        <div id="displayArea">
+          <p>{{calc.str}}</p>
+        </div>
+        <!-- FIRST ROW-->
+        <div class='row'>
+          <!--first button-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.clearStacks()">
+                <p>C</p>
+            </button>
+          </div>
+        <!-- second buttons-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm">
+                <p id = 'uni'>`</p>
+            </button>
+          </div>
+        <!-- third buttons-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.addOperation('/')">
+                <p>/</p>
+            </button>
+          </div>
+        <!-- fourth buttons-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.addOperation('*')">
+                <p>x</p>
+             </button>
+          </div>
+        </div>
+          <!--SECOND ROW-->
+        <div class = "row">
+          <!--first button-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.view(7)">
+                <p>7</p>
+            </button>
+          </div>
+        <!-- second buttons-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.view(8)">
+                <p>8</p>
+            </button>
+          </div>
+        <!-- third buttons-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.view(9)">
+                <p>9</p>
+            </button>
+          </div>
+        <!-- fourth buttons-->
+          <div class = "col-xs-3">
+            <button class="btn btn-sq-sm" ng-click = "calc.addOperation('-')">
+                <p>-</p>
+             </button>
+          </div>
+        </div>
+        <!--THIRD ROW-->
+      <div class = "row">
+        <!--first button-->
+        <div class = "col-xs-3">
+          <button class="btn btn-sq-sm" ng-click = "calc.view(4)">
+              <p>4</p>
+          </button>
+        </div>
+      <!-- second buttons-->
+        <div class = "col-xs-3">
+          <button class="btn btn-sq-sm" ng-click = "calc.view(5)">
+              <p>5</p>
+          </button>
+        </div>
+      <!-- third buttons-->
+        <div class = "col-xs-3">
+          <button class="btn btn-sq-sm" ng-click = "calc.view(6)">
+              <p>6</p>
+          </button>
+        </div>
+      <!-- fourth buttons-->
+        <div class = "col-xs-3">
+          <button class="btn btn-sq-sm" ng-click = "calc.addOperation('+')">
+              <p>+</p>
+           </button>
+        </div>
+      </div>
+      <!--FOURTH ROW-->
+    <div class = "row">
+      <!--first button-->
+      <div class = "col-xs-3">
+        <button class="btn btn-sq-sm" ng-click = "calc.view(1)">
+            <p>1</p>
+        </button>
+      </div>
+    <!-- second buttons-->
+      <div class = "col-xs-3">
+        <button class="btn btn-sq-sm" ng-click = "calc.view(2)">
+            <p>2</p>
+        </button>
+      </div>
+    <!-- third buttons-->
+      <div class = "col-xs-3">
+        <button class="btn btn-sq-sm" ng-click = "calc.view(3)">
+            <p>3</p>
+        </button>
+      </div>
+    <!-- fourth buttons-->
+      <div class = "col-xs-3">
+        <button class="btn btn-sq-sm" ng-click = "calc.equals()">
+            <p>=</p>
+         </button>
+      </div>
+    </div>
+    <!--FIFTH ROW-->
+  <div class = "row">
+    <!--first button-->
+    <div class = "col-xs-9">
+      <button class="btn btn-sq-sm btn-spec" ng-click = "calc.view(0)">
+          <p>0</p>
+      </button>
+    </div>
+  </div>
+        <!--end of buttons-->
+      </div>
+      <!--Script Sources for jquery,bootstrap and angularjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- source to angular file module -->
+    <script src = "app.js"></script>
+  </body>
+</html>

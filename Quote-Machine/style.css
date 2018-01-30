@@ -1,0 +1,64 @@
+body{
+  background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height:100%;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+html{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+.container-fluid{
+  height:100%;
+  display:table;
+  width:100%;
+  padding:0;
+}
+.row-fluid{
+  height:100%;
+  display:table-cell;
+  vertical-align:middle;
+}
+.centering {
+  float:none;
+  margin:0 auto;
+}
+h1{
+  text-align: center;
+}
+#mainBox{
+  background-color: blue;
+}
+#title1{
+  font-size: 70px;
+}
+#title1{
+  font-family: 'Bubbler One', sans-serif;
+}
+#centerBox{
+  background-color: blue;
+ position:fixed;
+  top:30%;
+  left:50%;
+ transform: translate(-50%, -50%);
+ width:50%;
+ height:30%;
+
+}
+p{
+  font-family: 'Raleway', sans-serif;
+}
+#quoteText{
+  font-size:20px;
+}
+.wrapper{
+  text-align:center;
+}
+#newQuote{
+  align-content: center;
+}
