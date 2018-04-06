@@ -63,14 +63,14 @@ $(document).ready(function(){
           var txt = buttonDeg.textContent || buttonDeg.innerText;
           var tempElem = document.getElementById('temperature');
           var value = tempElem.textContent || tempElem.innerText;
-          if(txt=="°C"){
+          if(txt=="°F"){
             var num = (value*(9/5))+32.0;
             $('#temperature').html(Math.round(num));
-            $('#temp_button').html("°F");
+            $('#temp_button').html("°C");
           }else{
             var num2 = (value-32)*(5/9.0);
             $('#temperature').html(Math.round(num2));
-            $('#temp_button').html("°C");
+            $('#temp_button').html("°F");
           }
         });
       };
