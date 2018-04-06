@@ -6,7 +6,7 @@ $(document).ready(function(){
     function onPositionReceived(position){
       var lat = position.coords.latitude;
       var long = position.coords.longitude;
-      var str =  'https://fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+long;
+      var str =  'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long + "&units=metric&APPID=41061a0030a40fb8d4cc13bdc7ccebc4";
       var myRequest = new XMLHttpRequest();
       myRequest.open('GET',str);
       myRequest.onload = function(){
@@ -16,7 +16,7 @@ $(document).ready(function(){
         var $summary = obj.weather[0].description;
         var $wind_speed = obj.wind.speed + " MPH";
         //request for city name
-        var city = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+long+'&sensor=true';
+        var city = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+long;
         console.log(city);
         var nameRequest = new XMLHttpRequest();
         nameRequest.open('GET',city);
