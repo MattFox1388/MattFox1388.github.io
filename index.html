@@ -1,137 +1,265 @@
-<html>
- <html lang ="en">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<head>
-		<title>My Personal Portfolio</title>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" type="text/css" href="css/app.css">
-        <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
-	</head>
-	<body>
-	<br>
-	    <div class="container">
-	        <nav class = "navbar navbar-inverse">
-	            <a href="#" class = "navItems"id="home">Home</a>
-	            <a href="#" class = "navItems"id="portfolio">Portfolio</a>
-                <a href="#" class = "navItems"id="contact">Contact</a>
-                <a href="https://www.facebook.com/matt.fox.543792" alt="facebook" class = "iconAref"id = "firstIcon"><img src="http://www.freeiconspng.com/uploads/facebook-transparent-pics-18.png"class="img1"></a>
-                <a href="https://twitter.com/kazou8" alt="twitter"class = "iconAref"><img src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-256.png"class="img1"></a>
-                <a href="https://www.linkedin.com/in/matthew-fox-194583138/" alt="linkedIn"class = "iconAref"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png"class="img1"></a>
-                <a href="https://www.freecodecamp.com/mattfox1388" alt="freecodebootcamp"class = "iconAref" id = "lastIcon"><img src="https://qph.ec.quoracdn.net/main-qimg-403f76f93a17b887ddf92cb372136b64"class="img1"></a>
-            </nav>
-	   </div>
-<div class="container">
-    <div class="jumbotron" id="homeSection">
-	   <div class="row">
-	   <div class="col-lg-3">
-	  <a data-flickr-embed="true"  href="https://www.flickr.com/photos/155287618@N06/34976504636/in/dateposted-public/" title="phot0"><img src="https://c1.staticflickr.com/5/4243/34976504636_3faa0f77e2_n.jpg" width="150" height="200" alt="phot0" class="img-responsive img-rounded"></a><script  charset="utf-8"></script>
-	   </div>
-	       <div class="col-lg-9">
-	        <span class="text-info"><h2>About Me</h2><br><br><p>My name is Matt and I'm currently a student at UWM studying computer science. I currently am able to code with Java and Javascript. I'm also knowledgable with AngularJS and C# (Unity Games). Please check out my recent projects below. </p></span>
-	      </div>
-	   </div>
-    </div>
-   <!--next section-->
-   <hr/>
-    <!--portfolio projects-->
-    <div class="row" id="portfolioSection">
-        <div class = "col-xs-4">
-        <figure class="projects">
-            <img src="images/serve.png" alt="profile-sample2" />
-            <figcaption>
-                <h3 class="title3">Calculator</h3>
-            </figcaption>
-            <a href="https://mattfox1388.github.io/Calculator/"></a>
-        </figure>
-        </div>
-        <div class = "col-xs-4">
-        <figure class="projects">
-            <img src="images/weather.png" alt="profile-sample7" />
-            <figcaption>
-                <h3 class="title3">Weather</h3>
-            </figcaption>
-            <a href="https://mattfox1388.github.io/Local_Weather/"></a>
-        </figure>
-        </div>
-        <div class = "col-xs-4">
-        <figure class="projects">
-            <img src="images/wiki.png" alt="profile-sample6" />
-            <figcaption>
-                <h3 class="title3">Wikipedia Search</h3>
-            </figcaption>
-            <a href="https://mattfox1388.github.io/Wiki_Search/"></a>
-        </figure>
-        </div>
-    </div>
-    <div class = "row" id ="portfolioSection2">
-        <div class="col-xs-4">
-            <figure class="projects">
-                <img src="images/twitch.png" alt="profile-sample2" />
-                <figcaption>
-                    <h3 class="title3">Twitch Streams</h3>
-                </figcaption>
-                <a href="https://mattfox1388.github.io/Twitch_App/"></a>
-            </figure>
-        </div>
-        <div class="col-xs-4">
-            <figure class="projects" class ="short">
-                <img src="images/maxresdefault.jpg" alt="profile-sample7" />
-                <figcaption>
-                    <h3 class="title3">Prison Game (C# Unity)</h3>
-                </figcaption>
-                <a href="https://mattfox1388.github.io/Prison_Game/"></a>
-            </figure>
-        </div>
-        <div class="col-xs-4">
-            <figure class="projects"class ="short">
-                <img src="images/unity.jpg" alt="profile-sample6" />
-                <figcaption>
-                    <h3 class="title3">Number Wizard</h3>
-                </figcaption>
-                <a href="https://mattfox1388.github.io/NumberWizard"></a>
-            </figure>
-        </div>
-    </div>
-    <hr/>
-    <!-- Contact Info-->
-    <div class = "container" id = "contactSection">
-        <h2>Contact Info</h2><br><br>
-        <p>Email: mzorro102@gmail.com</p>
-        <p>Or contact me through social media.</p><br><br>
-    </div>
-</div>
-<footer>
-    <div class="container">
-        <div class="row">
-            
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 
-            <div class="col-sm-4">
-                <h6>About this website</h6>
-                <p>All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.</p>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Jobs</a>
+            </li>
+            <li>
+                <a href="#education">Background</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Matthew Fox</h1>
+            <h2>Software Developer</h2>
+            <form method="get" action="Resume_Matt_Fox.pdf">
+                <button type="submit" class = "btn-rounded-white">Download Resume</button>
+             </form>
+            <!--<a href="#" class="btn-rounded-white">Acquire Resume</a>-->
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class = "col-xs-4">
+                            <img src="images/canva-photo-editor.png" class="img-responsive img-thumbnail" alt="Matthew D. Fox">
+                </div>
+                <div class="col-xs-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-xs-4">
+                    <p>
+                        My name is Matt and I'm currently a student at UWM studying computer science. I am able to code primarily in Java, Javascript, C#, and Matlab. I'm also knowledgable with AngularJS and C++. Please check out my recent projects below.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Jobs</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2018 – Present">
+                <h3>UWM Mobility Lab</h3>
+                <h4>Undergrad Research</h4>
+                <p>
+                    The Mobility Lab is a lab that primarily focuses it's work on rehabilitation research for improving health and function for those disabled.
+                    I primarily help the lab advance their methods of processing subject data. My first project is creating a GUI (graphical user interface) that
+                    helps lab members process data easier. The second project revolves around creating a report generator that uses processed data from
+                    the GUI to make readable reports for medical personnel.
+                </p>
             </div>
 
-            <div class="col-sm-2">
-                <h6>Navigation</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#" id="home">Home</a></li>
-	                <li><a href="#" id="portfolio">Portfolio</a></li>
-	                <li><a href="#" id="contact">Contact</a></li>
-                </ul>
+            <div data-date="June 2017 – Present">
+                <h3>Texas Roadhouse</h3>
+                <h4>Prep Cook</h4>
+                <p>
+                   Responsible for preparing food to be used by cooks later in the day. This job requires skills like time management, patience, and accuracy.
+                </p>
             </div>
 
-            <div class="col-sm-4">
-            <h6>Coded by Matt D. Fox <span class="glyphicon glyphicon-fire"></span> </h6>
+            <div data-date="July 2017 – September 2017">
+                <h3>Menards</h3>
+                <h4>Cashier</h4>
+                <p>
+                    At Menards I was responsible for checking out customers, providing good customer service, and restocking products throughout the store that were returned.
+                    This job required me to be friendly, concerned with the customer, and also good with my memory. 
+                </p>
             </div>
-
         </div>
     </div>
-</footer>
-	<!--Just script sources-->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src='js/app.js'></script>
-	</body>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Background</h2>
+        <div class="education-block">
+            <h3>UW-Milwaukee</h3>
+            <span class="education-date">Sept 2016 - Present</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>
+                Currently I attend UWM with a grade point average of 3.866 in my junior year. I plan on graduating December of 2019.
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Calculator</h3>
+                        <p>
+                            This calculator uses postfix notation to evaluate expressions. This project is programmed with JavaScript.
+                        </p>
+                        <a href="https://mattfox1388.github.io/Calculator/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Chronotimer</h3>
+                        <p>
+                            This was a group project for my school that was coded in Java. The program emulated a race timer which was accessible using a GUI.
+                        </p>
+                        <a href="https://github.com/skelath1/ChronoTimer">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+
+                <div class="project shadow-large">
+                        <div class="project-image">
+                            <img src="images/project.jpg" />
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Weather</h3>
+                            <p>
+                                This web application uses weather data from a API that is accessed with AJAX. It finds the users through geolocation.
+                            </p>
+                            <a href="https://mattfox1388.github.io/Local_Weather/">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Matlab</li>
+            <li>JQuery</li>
+            <li>Object Oriented Programming</li>
+            <li>Agility</li>
+            <li>Git</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Debugging</li>
+            <li>AJAX</li>
+            <li>Wordpress</li>
+            <li>Entity Framework</li>
+            <li>ASP.NET</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Inquiries</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/fox5@uwm.edu">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 Matthew Fox
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/MattFox1388" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/matthew-fox-194583138/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://uwm.joinhandshake.com/users/5673570" target="_blank"><i class="far fa-file" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
