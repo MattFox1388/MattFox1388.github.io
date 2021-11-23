@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Weather Machine</title>
+    <!--Links to stylesheet sources-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <!--main box-->
+  <div class="container-fluid">
+    <div class="jumbotron"id="center_div">
+      <h1 class="header" id="header">Click for Local Weather</h1><br>
+      <button type="submit"class="btn btn-info btn-lg" role="button" id="button1">Find Location</button>
+     </div>
+     <!--components of Weather-->
+     <div class="jumbotron"id="weather_div">
+       <h3 class="header" id="name1"></h3>
+       <!--first card--><div class="col-xs-1"></div>
+       <div class="card col-xs-3">
+        <img class="card-img-top" src="https://d30y9cdsu7xlg0.cloudfront.net/png/218414-200.png" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Temperature</h4>
+          <td><nobr><p class="card-text"id='temperature'></p><button type="button"class="btn btn-primary" id="temp_button">°F</button><nobr></td>
+          </div>
+        </div>
+        <!--Second card-->
+        <div class="card col-xs-3">
+         <img class="card-img-top" src="https://cdn0.iconfinder.com/data/icons/large-weather-icons/512/Wind_vane.png" alt="Card image cap">
+         <div class="card-block">
+           <h4 class="card-title">Wind Speed</h4>
+           <p class="card-text" id='wind_speed'></p>
+           </div>
+         </div>
+         <!--third Card-->
+         <div class="card col-xs-3">
+          <img class="card-img-top" id="card3"src="" alt="">
+          <div class="card-block">
+            <h4 class="card-title">Summary</h4>
+            <p class="card-text"id="summary"></p>
+            </div>
+          </div>
+     </div>
+  </div>
+    <!--Links to js sources-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>

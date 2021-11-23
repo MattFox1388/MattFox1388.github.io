@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "PrisonGame.data.unityweb",
+"asmCodeUrl": "PrisonGame.asm.code.unityweb",
+"asmMemoryUrl": "PrisonGame.asm.memory.unityweb",
+"asmFrameworkUrl": "PrisonGame.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
